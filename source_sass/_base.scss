@@ -1,1 +1,134 @@
 // Add any custom Sass & CSS here
+
+a{
+	text-decoration: none;
+}
+
+.FrontPage{
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-image: url('../data/images/front_page.jpg');
+	//background-color: black;
+	color:#2c3e50;;
+	height: 100vh;
+	position:absolute;
+	width: 100vw;
+	margin-left: 0px;
+	margin-right: 0px;
+
+	.outer_box{
+		min-height: 20vh;
+		padding: 30px;
+		position: relative;
+		top:50%;
+		left:50%;
+		transform: translateY(-50%) translateX(-50%);
+		background-color: white;
+
+		.page_heading{
+			font-size: 2.5em;
+			padding: 10px;
+			padding-bottom: 40px;
+
+		}
+		a{
+			color: white;
+		}
+	}
+}
+
+.LoginPage{
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-image: url('../data/images/login.jpg');
+	//background-color: black;
+	color:#2c3e50;;
+	height: 100vh;
+	position:absolute;
+	width: 100vw;
+	margin-left: 0px;
+	margin-right: 0px;
+
+	.outer_box{
+		min-height: 20vh;
+		padding: 30px;
+		position: relative;
+		top:50%;
+		left:50%;
+		transform: translateY(-50%) translateX(-50%);
+		background-color: white;
+
+		.page_heading{
+			font-size: 2.5em;
+			padding: 10px;
+			padding-bottom: 40px;
+
+		}
+		a{
+			color: white;
+		}
+		.button{
+			float: right;
+			margin-top: 15px;
+		}
+	}
+}
+.SignupPage{
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-image: url('../data/images/signup.png');
+	//background-color: black;
+	color:#2c3e50;;
+	height: 100vh;
+	position:absolute;
+	width: 100vw;
+	margin-left: 0px;
+	margin-right: 0px;
+
+	.outer_box{
+		min-height: 20vh;
+		padding: 30px;
+		position: relative;
+		top:50%;
+		left:50%;
+		transform: translateY(-50%) translateX(-50%);
+		background-color: white;
+
+		.page_heading{
+			font-size: 2.5em;
+			padding: 10px;
+			padding-bottom: 40px;
+
+		}
+		a{
+			color: white;
+		}
+		.button{
+			float: right;
+			margin-top: 15px;
+		}
+	}
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid #DA3637;
+}
+
+input.ng-valid.ng-touched {
+  border: 1px solid #509D12;
+}
+
+.ng-invalid .button {
+  background: gray;
+}
+
+.error {
+  color: red;
+  padding-bottom: 10px;
+}

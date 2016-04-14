@@ -1,0 +1,28 @@
+<div class="LoginPage">
+	<div class = "outer_box text-center large-4">
+		<div class="row page_heading">ClassRoom</div>
+		<div class="row text-left">
+			<form name="myform" ng-submit="submit()" nonvalidate>
+				<fieldset>
+					Username<font color="red">*</font>
+					<input type="text" name="username" 
+        				placeholder="Username"
+        				ng-model="username"
+        				ng-required="true">
+        			<p class="error validationerror text-center" ng-show="myform.username.$invalid && myform.username.$touched">
+        				Please enter a username.
+        			</p>
+        			Password<font color="red">*</font>
+					<input type="text" name="password"
+        				placeholder="Password" 
+        				ng-model="password"
+        				ng-required="true">
+        			<p class="error validationerror text-center" ng-show="myform.password.$invalid && myform.password.$touched">
+        				Enter a valid password.
+        			</p>
+				</fieldset>
+				<button type="submit" class="button">Login</button>
+			</form>
+		</div>
+	</div>
+</div>
