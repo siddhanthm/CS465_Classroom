@@ -13,5 +13,8 @@ app.config(function ($routeProvider) {
 	}).when('/class/:id', {
 		templateUrl: './partials/class.html',
 		controller: 'ClassCtrl'
+	}).when('/class/:id/:postid', {
+		templateUrl: './partials/post.html',
+		controller: 'PostidCtrl'
 	}).otherwise({ redirectTo: '/' });
 });

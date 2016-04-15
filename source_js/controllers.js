@@ -36,6 +36,7 @@ classRoomControllers.controller('ClassCtrl', ['$scope','$http','$routeParams', f
 	$scope.classes;
 	$scope.order = "likes";
 	$scope.reverse= true;
+	$scope.classindex = $routeParams.id;
 	$http.get('../data/class.json').success(function(data){
 		$scope.classes = data;
 		$scope.classinfo = data[$routeParams.id];
@@ -43,4 +44,25 @@ classRoomControllers.controller('ClassCtrl', ['$scope','$http','$routeParams', f
 		console.log($scope.classinfo)
 	});
 }]);
+
+classRoomControllers.controller('PostidCtrl', ['$scope','$http','$routeParams', function($scope, $http,$routeParams){
+	console.log("Here", $routeParams.id);
+	console.log("Here Also",$routeParams.postid);
+	$scope.classes;
+	$scope.class = $routeParams.id;
+	console.log("Yipee", $scope.class);
+	$scope.heart = true;
+	$http.get('../data/class.json').success(function(data){
+		$scope.classlist = data;
+		$scope.classes = data[$routeParams.id];
+		$scope.classinfo = $scope.classes.posts[$routeParams.postid];
+		console.log($scope.classinfo);
+
+	});
+
+	$scope.change = function(){
+		$scope.heart = !$scope.heart;
+	}
+}]);
+
 

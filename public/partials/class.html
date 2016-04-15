@@ -29,14 +29,25 @@
 				</div>
 			</div>
 			<div class="row class_search">
-				<div class="large-9 columns">
-					<input ng-model ="query" placeholder="&#xF002;" style="font-family:Arial, FontAwesome" class = "searchbox" autofocus>
+				<div class="large-11 large-centered">
+					<div class="large-9 columns">
+						<input ng-model ="query" placeholder="&#xF002;" style="font-family:Arial, FontAwesome" class = "searchbox" autofocus>
+					</div>
+					<div class="large-3 columns text-right"><i class="fa fa-plus" aria-hidden="true"></i></div>
 				</div>
-				<div class="large-3 columns text-right"><i class="fa fa-plus" aria-hidden="true"></i></div>
 			</div>
 			<div class="row class_post">
-				<div ng-repeat="post in classinfo.posts | orderBy:order:reverse" class="large-11 large-centered class_post_item">
-				{{post.post_title}} {{post.likes}}</div>
+				<div ng-repeat="post in classinfo.posts| filter:query | orderBy:order:reverse" class="large-11 large-centered class_post_item">
+					<a ng-href="#/class/{{classindex}}/{{classinfo.posts.indexOf(post)}}">
+						<div class="large-10 columns class_post_title">{{post.post_title}}</div> 
+						<div class="large-2 columns class_post_title">
+							<div class="large-12 text-center">
+								<font color="red"><i class="fa fa-heart" aria-hidden="true"></i></font>
+							</div>
+							<div class="large-12 text-center">{{post.likes}}</div>
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
