@@ -18,6 +18,9 @@ classRoomControllers.controller('LoginCtrl', ['$scope','$http','$location', func
 
 classRoomControllers.controller('SignupCtrl', ['$scope','$http', function($scope, $http){
 	$scope.submit = function(){
+		$scope.message = "";
+		$scope.message1 = "";
+
 		if($scope.email == 'siddhanthm@outlook.com'){
 			$scope.message = "Email " + $scope.email + " already exists!";
 		}else{
@@ -31,6 +34,8 @@ classRoomControllers.controller('SignupCtrl', ['$scope','$http', function($scope
 classRoomControllers.controller('ClassCtrl', ['$scope','$http','$routeParams', function($scope, $http,$routeParams){
 	console.log("Here", $routeParams.id);
 	$scope.classes;
+	$scope.order = "likes";
+	$scope.reverse= true;
 	$http.get('../data/class.json').success(function(data){
 		$scope.classes = data;
 		$scope.classinfo = data[$routeParams.id];
