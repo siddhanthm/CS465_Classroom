@@ -1,6 +1,7 @@
 <div class="LoginPage">
 	<div class = "outer_box text-center large-4">
-		<div class="row page_heading">ClassRoom</div>
+		<div class="row page_heading"><i class="fa fa-book"></i> ClassRoom</div>
+		<div class="row"><font color="red">{{message}}</font></div>
 		<div class="row text-left">
 			<form name="myform" ng-submit="submit()" nonvalidate>
 				<fieldset>
@@ -13,7 +14,7 @@
         				Please enter a username.
         			</p>
         			Password<font color="red">*</font>
-					<input type="text" name="password"
+					<input type="password" name="password"
         				placeholder="Password" 
         				ng-model="password"
         				ng-required="true">

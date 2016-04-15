@@ -10,5 +10,8 @@ app.config(function ($routeProvider) {
 	}).when('/signup', {
 		templateUrl: './partials/signup.html',
 		controller: 'SignupCtrl'
+	}).when('/class/:id', {
+		templateUrl: './partials/class.html',
+		controller: 'ClassCtrl'
 	}).otherwise({ redirectTo: '/' });
 });

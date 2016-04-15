@@ -1,6 +1,7 @@
 <div class="SignupPage">
 	<div class = "outer_box text-center large-4">
-		<div class="row page_heading">ClassRoom</div>
+		<div class="row page_heading"><i class="fa fa-book"></i> ClassRoom</div>
+                <div class="row"><font color="red">{{message}}</font><font color="green">{{message1}}</font></div>
 		<div class="row text-left">
 			<form name="myform2" ng-submit="submit()" nonvalidate>
 				<fieldset>
@@ -21,12 +22,13 @@
         				Please enter a email.
         			</p>
         			Password<font color="red">*</font>
-					<input type="text" name="password"
+					<input type="password" name="password"
         				placeholder="Password" 
         				ng-model="password"
-        				ng-required="true">
+        				ng-required="true"
+                                        ng-minlength="6">
         			<p class="error validationerror text-center" ng-show="myform2.password.$invalid && myform2.password.$touched">
-        				Enter a valid password.
+        				Enter a valid password(minmum 6 characters).
         			</p>
 				</fieldset>
 				<button type="submit" class="button">Create</button>
