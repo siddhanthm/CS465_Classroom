@@ -690,6 +690,10 @@ a{
 		background-color: white;
 		padding: 0px;
 		overflow: hidden;
+
+		.fa-trash:hover{
+			color: red;
+		}
 	
 		.post_back{
 			height: 8%;
@@ -735,6 +739,11 @@ a{
 
 				.post_comments_heading{
 					font-size: 1.4em;
+					margin-bottom: 20px;
+				}
+
+				.post-add{
+					padding-left: 20px;
 				}
 
 				.post-comments-list{
