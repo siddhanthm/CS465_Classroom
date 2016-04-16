@@ -63,6 +63,35 @@ classRoomControllers.controller('PostidCtrl', ['$scope','$http','$routeParams', 
 	$scope.change = function(){
 		$scope.heart = !$scope.heart;
 	}
+
+	$scope.submit = function(){
+		$scope.comment_added = $scope.comment;
+		$scope.if_comment = true;
+		$scope.comment = "";
+	}
 }]);
+
+classRoomControllers.controller('AddcommentCtrl', ['$scope','$http','$routeParams', function($scope, $http,$routeParams){
+	$scope.class = $routeParams.id;
+	$http.get('../data/class.json').success(function(data){
+		$scope.classlist = data;
+		$scope.classes = data[$routeParams.id];
+		console.log($scope.classinfo);
+	});
+
+	$scope.submit = function(){
+		$scope.message = "Post added Successfully!";
+	}
+}]);
+
+classRoomControllers.controller('EditCtrl', ['$scope','$http','$routeParams', function($scope, $http,$routeParams){
+
+	$http.get('../data/class.json').success(function(data){
+		$scope.classlist = data;
+	});
+
+}]);
+
+
 
 
