@@ -90,6 +90,16 @@ classRoomControllers.controller('EditCtrl', ['$scope','$http','$routeParams', fu
 		$scope.classlist = data;
 	});
 
+	$scope.delete = function(){
+		$scope.message = "";
+		$scope.message1 = "Class deleted!"
+	}
+
+	$scope.submit = function(){
+		$scope.message1 = "";
+		$scope.message = "Class added!";
+	}
+
 }]);
 
 

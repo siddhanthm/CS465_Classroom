@@ -727,6 +727,10 @@ a{
 				color:#f07c17;
 				font-size: .9em;
 			}
+
+			.message{
+				font-size: .55em;
+			}
 		}
 		.post_description{
 			position: absolute;
@@ -744,6 +748,9 @@ a{
 
 				.post-add{
 					padding-left: 20px;
+					button{
+						float: right;
+					}
 				}
 
 				.post-comments-list{
