@@ -32,6 +32,19 @@ classRoomControllers.controller('SignupCtrl', ['$scope','$http', function($scope
 }]);
 
 classRoomControllers.controller('ClassCtrl', ['$scope','$http','$routeParams', function($scope, $http,$routeParams){
+	$scope.classes;
+	$scope.order = "likes";
+	$scope.reverse= true;
+	$scope.classindex = $routeParams.id;
+	$http.get('../data/class.json').success(function(data){
+		$scope.classes = data;
+		$scope.classinfo = data[$routeParams.id];
+		console.log($scope.classes);
+		console.log($scope.classinfo);
+	});
+}]);
+
+classRoomControllers.controller('ohCtrl', ['$scope','$http','$routeParams', function($scope, $http,$routeParams){
 	console.log("Here", $routeParams.id);
 	$scope.classes;
 	$scope.order = "likes";
@@ -41,7 +54,8 @@ classRoomControllers.controller('ClassCtrl', ['$scope','$http','$routeParams', f
 		$scope.classes = data;
 		$scope.classinfo = data[$routeParams.id];
 		console.log($scope.classes);
-		console.log($scope.classinfo)
+		console.log($scope.classinfo);
+		console.log($scope.classinfo.officeHours[0].students[0].name);
 	});
 }]);
 

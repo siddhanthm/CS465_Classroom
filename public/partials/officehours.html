@@ -1,0 +1,82 @@
+<div class="OfficeHoursPage">
+	<div class="medium-3 columns title">
+		<div class="row heading">
+			<div class="heading_text">
+				<i class="fa fa-book"></i> ClassRoom
+			</div>
+		</div>
+		<div class="row classes_left">
+			<div class="text-center large-12 classes_left_heading">Classes</div>
+			<div ng-repeat="class in classes" class="large-6 large-centered text-center class_list">
+				<div class="class_list_title"><a href="#/class/{{classes.indexOf(class)}}">{{class.class}}</a></div> 
+			</div>
+		</div>
+		<div class="row footer"> 
+			<div class="footer_buttons">
+				<button class="button"><a href="#/edit"><i class="fa fa-cog" aria-hidden="true"></i> Classes</a></button>
+				<button class="button right"><a href="#/"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign Out</a></button>
+			</div>
+		</div>
+	</div>
+	<div class="medium-9 columns details">
+		<div class="large-12 class_header">
+			<div class="large-1 text-center columns class_header_text"><a href="#/class/{{classindex}}">Q/A</a></div>
+			<div class="large-2 text-center columns class_header_text"><a href="#/class/{{classindex}}/officehours">Office Hours </a> </div>
+		</div>
+		<div class="large-12 class_details">
+			<div class="row">
+				<div class="large-12 text-center class_details_heading">
+					{{classinfo.class}}
+				</div>
+			</div>
+			<div ng-repeat="item in classinfo.officeHours">
+				<div class="row class_search">
+					<div class="large-11 large-centered">
+						<div class="large-9 columns">
+							{{item.TAname}}'s Office Hours
+						</div>
+						<div class="large-3 columns text-right">
+							{{item.Location}}
+						</div>
+					</div>
+				</div>
+				<div class="row class_post">
+					<div ng-repeat="oh in item.students" class="large-11 large-centered post_comment_text">
+						<div class="large-1 text-center columns"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+						<div class="large-4 columns class_post_title">Name : {{oh.name}}</div> 
+						<div class="large-7 columns class_post_title">Location : {{oh.Location}}</div> 
+					</div>
+				</div>
+			</div> <br> <br>
+			<div class="large-11 large-centered class_search">
+				<div class="large-12 large-centered">Add to queue:</div>
+				<div class="large-12 large-centered text-left">
+					<form name="myform" ng-submit="submit()" nonvalidate>
+						<fieldset class="large-4 columns">
+							<input type="text" name="Name" 
+		        				placeholder="Name"
+		        				ng-model="name"
+		        				ng-required="true">
+						</fieldset>
+
+						<fieldset class="large-8 columns">
+							<input type="text" name="Location" 
+		        				placeholder="Location"
+		        				ng-model="location">
+						</fieldset>
+
+						<fieldset class="large-4">
+							<select>
+								<option ng-repeat="TAname in classinfo.officeHours">
+									{{TAname.TAname}}
+								</option>
+							</select>
+						</fieldset>
+
+						<button type="submit" class="button">Add</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

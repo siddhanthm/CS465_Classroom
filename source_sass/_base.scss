@@ -762,6 +762,187 @@ a{
 	}
 }
 
+.OfficeHoursPage{
+	background-color: #2c3e50;
+	width: 100vw;
+	min-height: 100vh;
+	//overflow: hidden;
+	margin: 0px;
+	width: 100vw;
+	.title{
+		height: 100%;
+		padding: 0px;
+		border-right: 2px black;
+		.heading{
+			background-color: white;
+			height: 18%;
+			position: fixed;
+			width: inherit;
+			.heading_text{
+				position: relative;
+				top: 50%;
+				left: 50%;
+				transform: translateY(-50%) translateX(-50%);
+				text-align: center;
+				font-size: 2.5em;
+			}
+		}
+		.classes_left{
+			position: fixed;
+			color: white;
+			height: 64%;
+			top:18%;
+			width: inherit;
+			background-color: #2c3e50;
+			
+			.classes_left_heading{
+				padding: 40px;
+				font-size: 2em;
+				padding-bottom: 30px;
+			}
+
+			.class_list{
+				height: 40px;
+				background-color: white;
+				margin-top: 20px;
+				margin-bottom: 20px;
+
+				.class_list_title{
+					position: relative;
+					top: 50%;
+					left: 50%;
+					transform: translateY(-50%) translateX(-50%);
+					a{
+						color: #2c3e50;
+					}
+				}
+			}
+		}
+		.footer{
+			background-color: white;
+			height: 18%;
+			position: fixed;
+			top: 82%;
+			width: inherit;
+			.footer_buttons{
+				padding: 50px;
+				position: relative;
+				top: 50%;
+				left: 50%;
+				transform: translateY(-50%) translateX(-50%);
+				color: #2c3e50;
+				.right{
+					float: right;
+				}
+				button{
+					margin-bottom: 0px;
+				}
+				a{
+					color: white;
+				}
+			}
+		}
+	}
+	.details{
+		border-left:1px solid #2c3e50; 
+		min-height: 100vh;
+		//width: inherit;
+		background-color: white;
+		padding: 0px;
+		overflow: hidden;
+
+		.class_header{
+			position: fixed;
+			top:0px;
+			background-color: #2c3e50;
+			height: 6%;
+			color: white;
+			z-index: 30;
+			border-left:1px solid #2c3e50;
+			a{
+				color: white;
+			}
+
+			.class_header_text{
+				float: left;
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+				font-weight: bold;
+			}
+		}
+
+
+		.class_details{
+			padding: 15px;
+			padding-top: 25px;
+			top:6%;
+			position: absolute;
+			width: inherit;
+			font-size: 2em;
+			padding: 0px;
+			//border-left:1px solid #2c3e50; 
+
+			.class_details_heading{
+				color:#f07c17;
+				font-size: 1em;
+			}
+
+			.class_search{
+				font-size: .8em;
+				margin-top: 20px;
+				.searchbox{
+					width: 100%;
+					margin-bottom: 20px;
+					border: 1px solid black;
+					height: 35px;
+				}
+				a{
+					color: #2c3e50;
+				}
+
+				.fa-plus:hover{
+					color: #A00000;
+				}
+				.fa-plus:active{
+					color: white;
+				}
+
+				.columns {
+					padding-left: 0;
+				}
+
+				.button {
+					float: right;
+				}
+
+				select {
+					width: 95%;
+				}
+			}
+
+			.class_post{
+				margin-top: 25px;
+				font-size: .5em;
+				a{
+					color: #2c3e50;
+				}
+				.class_post_item{
+					height: 80px;
+					border: 4px solid #2c3e50;
+					margin-bottom: 30px;
+					position: relative;
+					.class_post_title{
+						position: relative;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+				}
+			}
+		}
+	}
+}
+
 input.ng-invalid.ng-touched {
   border: 1px solid #DA3637;
 }

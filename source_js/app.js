@@ -13,6 +13,9 @@ app.config(function ($routeProvider) {
 	}).when('/class/:id', {
 		templateUrl: './partials/class.html',
 		controller: 'ClassCtrl'
+	}).when('/class/:id/officehours', {
+		templateUrl: './partials/officehours.html',
+		controller: 'ohCtrl'
 	}).when('/class/:id/addpost', {
 		templateUrl: './partials/addcomment.html',
 		controller: 'AddcommentCtrl'

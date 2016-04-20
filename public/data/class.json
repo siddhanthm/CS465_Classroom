@@ -1,6 +1,52 @@
 [
 	{
 		"class":"CS 465",
+		"officeHours":[
+			{
+				"officeif": true,
+				"TAname": "Chandra",
+				"Location": "Siebel 0207",
+				"TaStartTime": "11:00",
+				"TaEndTime":"12:00",
+				"students" : 
+				[
+					{
+						"name":"Harry Potter",
+						"Location": "Snape is helping voldermort"
+
+					},
+					{
+						"name":"Hermoine Grainger",
+						"Location": "I'm so smart"
+					},
+					{
+						"name":"Ron Weasely",
+						"Location": "I have sexual feelinggs towards my rat!"
+					}
+				]
+
+			},	
+			{
+				"officeif": true,
+				"TAname": "Hari",
+				"Location": "Siebel 0216",
+				"TaStartTime": "11:00",
+				"TaEndTime":"12:00",
+				"students" : 
+				[
+					{
+						"name":"Sid",
+						"Location": "Snape is helping voldermort"
+
+					},
+					{
+						"name":"Priya",
+						"Location": "I'm so smart"
+					}
+				]
+
+			}
+		],
 		"posts":[
 			{
 				"post_title" : "Rachel: Oh, are you setting Ross up with someone? Does she have a wedding dress?",
@@ -76,6 +122,31 @@
 	},
 	{
 		"class":"CS 438",
+		"officeHours":[
+			{
+				"officeif": true,
+				"TAname": "Cinda",
+				"TaStartTime": "11:00",
+				"TaEndTime":"12:00",
+				"students" : 
+				[
+					{
+						"name":"Harry",
+						"topic": "Snape is helping voldermort"
+
+					},
+					{
+						"name":"Hermoine",
+						"topic": "I'm so smart"
+					},
+					{
+						"name":"Ron",
+						"topic": "I have sexual feelinggs towards my rat!"
+					}
+				]
+
+			}	
+		],
 		"posts":[
 			{
 				"post_title" : "Joey: Sure I peed on her. And if I had to, I’d pee on any one of you!",
@@ -110,7 +181,7 @@
 
 		]
 	},
-		{
+	{
 		"class":"CS 498RK",
 		"posts":[
 			{
