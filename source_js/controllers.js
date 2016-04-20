@@ -59,6 +59,30 @@ classRoomControllers.controller('ohCtrl', ['$scope','$http','$routeParams', func
 	});
 }]);
 
+classRoomControllers.controller('taohCtrl', ['$scope','$http','$routeParams', function($scope, $http,$routeParams){
+	console.log("Here", $routeParams.id);
+	$scope.classes;
+	$scope.order = "likes";
+	$scope.reverse= true;
+	$scope.classindex = $routeParams.id;
+	$http.get('../data/class.json').success(function(data){
+		$scope.classes = data;
+		$scope.classinfo = data[$routeParams.id];
+		console.log($scope.classes);
+		console.log($scope.classinfo);
+		console.log($scope.classinfo.officeHours[0].students[0].name);
+	});
+
+	$scope.submit = function(){
+		$scope.addedTAname = $scope.name;
+		$scope.addedTAlocation = $scope.location;
+		$scope.addedStartTime = $scope.stime;
+		$scope.addedEndTime = $scope.etime;
+		$scope.if_added = true;
+	}
+}]);
+
+
 classRoomControllers.controller('PostidCtrl', ['$scope','$http','$routeParams', function($scope, $http,$routeParams){
 	console.log("Here", $routeParams.id);
 	console.log("Here Also",$routeParams.postid);

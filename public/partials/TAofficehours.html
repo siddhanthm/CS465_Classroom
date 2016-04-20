@@ -1,4 +1,4 @@
-<div class="OfficeHoursPage">
+<div class="TAOfficeHoursPage">
 	<div class="medium-3 columns title">
 		<div class="row heading">
 			<div class="heading_text">
@@ -45,11 +45,22 @@
 						<div class="large-1 text-center columns"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
 						<div class="large-4 columns class_post_title">Name : {{oh.name}}</div> 
 						<div class="large-7 columns class_post_title">Location : {{oh.Location}}</div> 
-					</div> 
+					</div>
 				</div>
-			</div> <br> 
+			</div> 
+			<div class="row class_search" ng-show = "if_added">
+				<div class="large-11 large-centered">
+					<div class="large-8 columns">
+						{{addedTAname}}'s Office Hours ({{addedStartTime}} to {{addedEndTime}})
+					</div>
+					<div class="large-4 columns text-right">
+						{{addedTAlocation}}
+					</div>
+				</div>
+			</div>
+			<br>
 			<div class="large-11 large-centered class_search">
-				<div class="large-12 large-centered">Add to queue:</div>
+				<div class="large-12 large-centered">Add Office Hours:</div>
 				<div class="large-12 large-centered text-left">
 					<form name="myform" ng-submit="submit()" nonvalidate>
 						<fieldset class="large-4 columns">
@@ -65,12 +76,18 @@
 		        				ng-model="location">
 						</fieldset>
 
-						<fieldset class="large-4">
-							<select>
-								<option ng-repeat="TAname in classinfo.officeHours">
-									{{TAname.TAname}}
-								</option>
-							</select>
+						<fieldset class="large-6 columns">
+							<input type="text" name="Start Time" 
+		        				placeholder="Start Time"
+		        				ng-model="stime"
+		        				ng-required="true">
+						</fieldset>
+
+						<fieldset class="large-6 columns">
+							<input type="text" name="End Time" 
+		        				placeholder="End Time"
+		        				ng-model="etime"
+		        				ng-required="true">
 						</fieldset>
 
 						<button type="submit" class="button">Add</button>
