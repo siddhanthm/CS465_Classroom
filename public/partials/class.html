@@ -37,7 +37,7 @@
 				</div>
 			</div>
 			<div class="row class_post">
-				<div ng-repeat="post in classinfo.posts| filter:query | orderBy:order:reverse" class="large-11 large-centered class_post_item">
+				<div ng-repeat="post in classinfo.posts| filter:query" class="large-11 large-centered class_post_item">
 					<a ng-href="#/class/{{classindex}}/{{classinfo.posts.indexOf(post)}}">
 						<div class="large-10 columns class_post_title">{{post.post_title}}</div> 
 						<div class="large-2 columns class_post_title">
