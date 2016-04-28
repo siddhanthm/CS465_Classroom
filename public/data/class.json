@@ -1,47 +1,56 @@
 [
 	{
 		"class":"CS 465",
+		"topics":[
+			"HW",
+			"Project Proposal",
+			"User Scenarios",
+			"User Evaluation",
+			"Prototype",
+			"Final Exam"
+		],
 		"officeHours":[
 			{
 				"officeif": true,
-				"TAname": "Chandra",
-				"Location": "Siebel 0207",
-				"TaStartTime": "11:00",
-				"TaEndTime":"12:00",
+				"TAname": "Alex Kirlik",
+				"Location": "SC 3220",
+				"TaStartTime": "2:00",
+				"TaEndTime":"3:30",
 				"students" : 
 				[
 					{
-						"name":"Harry Potter",
-						"Location": "Snape is helping voldermort"
+						"name":"Priya Mittal",
+						"Location": "SC 3220"
 
 					},
 					{
-						"name":"Hermoine Grainger",
-						"Location": "I'm so smart"
+						"name":"Sheel Parekh",
+						"Location": "SC 3220"
 					},
 					{
-						"name":"Ron Weasely",
-						"Location": "I have sexual feelinggs towards my rat!"
+						"name":"Siddhanth Maheshwari",
+						"Location": "SC 3220",
+						"user": true
 					}
 				]
 
 			},	
 			{
 				"officeif": true,
-				"TAname": "Hari",
-				"Location": "Siebel 0216",
-				"TaStartTime": "11:00",
-				"TaEndTime":"12:00",
+				"TAname": "Sanorita Dey",
+				"Location": "SC 3107",
+				"TaStartTime": "3:00",
+				"TaEndTime":"4:00",
 				"students" : 
 				[
 					{
-						"name":"Sid",
-						"Location": "Snape is helping voldermort"
+						"name":"Zack",
+						"Location": "SC 3107"
 
 					},
 					{
-						"name":"Priya",
-						"Location": "I'm so smart"
+						"name":"Nitish",
+						"Location": "SC 3107"
 					}
 				]
 
@@ -49,79 +58,134 @@
 		],
 		"posts":[
 			{
-				"post_title" : "Rachel: Oh, are you setting Ross up with someone? Does she have a wedding dress?",
-				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
+				"post_title" : "Poster Guidelines",
+				"post_name" : "Anonymous",
+				"post_time" : "1 day ago",
+				"description":"Are there any guidelines for what should be on this poster? ",
+				"solved" : true,
+				"read" : true,
 				"likes" : 153,
 				"comments" :[
-					"Comment1",
-					"Comment2"
-
+					{
+						"mc_name" : "Andrew Bloomberg",
+						"mc" : "They said it will be discussed in class tomorrow.  Apparently we will design it on the computer and submit it to be printed."
+					},
+					{
+						"mc_name" : "Suzana Loznjakovic",
+						"mc" : "will the slides also be posted with this information?",
+						"fc" : [
+							{
+								"fc_name" : "Jefferson Su",
+								"fc_comment" : "They're up."
+							}
+						]
+					}
 				]
 			},
 			{
-				"post_title" : "Joey: Paper…snow…..a ghost!!!",
-				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
-				"likes" : 153,
-				"comments" :[
-					"Comment3",
-					"Comment4"
-
-				]
-			},
-			{
-				"post_title" : "Were Ross and Rachel on a break?",
-				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
+				"post_title" : "definition of prototype",
+				"post_name" : "Yujin Oh",
+				"post_time" : "1 day ago",
+				"description":"In the lecture slides, I have found multiple different definitions of 'prototype'  and a lof of details for each. Are we expected to know all of these different definitions and examples?",
+				"solved" : false,
+				"read" : true,
 				"likes" : 5430,
 				"comments" :[
-					"Comment3",
-					"Comment4"
 
 				]
 			},
 			{
-				"post_title" : "Food or Sex?",
-				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
+				"post_title" : "Final prototype demo(dummy) submission?",
+				"post_name" : "Anonymous",
+				"post_time" : "3 days ago",
+				"description":"Do we need to submit this before our demo or any time before its stated deadline? (may 4th)",
+				"solved" : true,
+				"read" : false,
 				"likes" : 540,
 				"comments" :[
-					"Comment3",
-					"Comment4"
-
-				]
-			},
-			{
-				"post_title" : "Middle name is Murial",
-				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
-				"likes" : 50,
-				"comments" :[
-					"Comment3",
-					"Comment4"
-
-				]
-			},{
-				"post_title" : "Janice: Oh… my… God!",
-				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
-				"likes" : 51,
-				"comments" :[
-					"Comment3",
-					"Comment4"
-
-				]
-			},
-			{
-				"post_title" : "Chandler: WHOOOPAH!",
-				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
-				"likes" : 430,
-				"comments" :[
-					"Comment3",
-					"Comment4"
-
+				{
+					"mc_name" : "Instructor Sanorita Dey",
+					"mc" : "That is just a dummy submission. So once you are done showing your demo to your TA, you need to just write a sentence like 'We showed the demo' and need to submit in compass so that the TAs can put your grade there. Please remember, the sentence is not important. You can write even a single word. But the submission is important."
+				},
+				{
+					"mc_name" : "Anonymous",
+					"mc" : "When will the TA contact us for the demo?",
+					"fc" : [
+						{
+							"fc_name" : "Instructor Chi-Hsien Yen",
+							"fc_comment" : "Please contact your TA directly if you did not receive email yet."
+						}
+					]
+				}
 				]
 			}
 
+		],
+		"instructorposts":[
+			{
+				"post_title" : "Midterm score posted in Compass",
+				"post_name" : "Sanorita Dey",
+				"post_time" : "1 month ago",
+				"description":"We just posted the midterm scores in Compass2g. Here are the few important statistics about the exam: MEAN SCORE : 81.22, MEDIAN SCORE : 83.63, STANDARD DEVIATION : 8.21, OBTAINED LOW SCORE : 58, OBTAINED HIGH SCORE : 96",
+				"solved" : true,
+				"read" : false,
+				"likes" : 153,
+				"comments" :[
+					{
+						"mc_name" : "Brian Weisberg",
+						"mc" : "Where can we go to look at our individual test results? As in, what questions we got wrong.",
+						"fc" : [
+							{
+								"fc_name" : "Instructor Robert Deloatch",
+								"fc_comment" : "Since I'm your TA, you can come during my office hours once break ends or set up some other time. I'll be available over break by appointment only."
+							},
+							{
+								"fc_name" : "Brian Weisberg",
+								"fc_comment" : "alright, I'll come by next week or something."
+							}
+						]
+					}
+				]
+			},
+			{
+				"post_title" : "Individual Peer Evaluation #1",
+				"post_name" : "Sanorita Dey",
+				"post_time" : "2 months ago",
+				"description":"This is just to inform you all that your first peer evaluation (an evaluation of the workload managed by each member of the group) is due on 1st March at 3:30 pm. This is an individual assignment. That is why, please submit your evaluation individually through compass peer evaluation #1 submission link. If you have already submitted this as a group, please submit it again individually.",
+				"solved" : true,
+				"read" : true,
+				"likes" : 50,
+				"comments" :[
+
+				]
+			},
+			{
+				"post_title" : "Deadline extended for written project proposal and peer evaluation",
+				"post_name" : "Sanorita Dey",
+				"post_time" : "2 months ago",
+				"description":"We have extended the deadline for written project proposal and peer evaluation. The new deadline is March 1, 2016 at 3:30 pm. We hope this extension will be useful for all the groups.",
+				"solved" : false,
+				"read" : true,
+				"likes" : 51,
+				"comments" :[
+					{	
+						"mc_name" : "Instructor Robert Deloatch",
+						"mc" : "The syllabus has also been updated to reflect this change and the date for release of Homework 2. Consider downloading the newest version of the document."
+					}
+				]
+			}
 		]
 	},
 	{
-		"class":"CS 438",
+		"class":"CS 411",
+		"topics":[
+			"HW",
+			"ER Diagrams",
+			"SQL",
+			"Query",
+			"Project",
+			"Final Exam"
+		],
 		"officeHours":[
 			{
 				"officeif": true,
@@ -151,6 +215,8 @@
 			{
 				"post_title" : "Joey: Sure I peed on her. And if I had to, I’d pee on any one of you!",
 				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
+				"solved" : true,
+				"read" : false,
 				"likes" : 1053,
 				"comments" :[
 					"Comment1",
@@ -161,16 +227,19 @@
 			{
 				"post_title" : "Joey: Here come the meat sweats…",
 				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
+				"solved" : true,
+				"read" : true,
 				"likes" : 543,
 				"comments" :[
 					"Comment3",
 					"Comment4"
-
 				]
 			},
 			{
 				"post_title" : "Whenever I’m sad, I stop being sad and be awesome instead. Barney",
 				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
+				"solved" : false,
+				"read" : true,
 				"likes" : 23,
 				"comments" :[
 					"Barney",
@@ -179,14 +248,51 @@
 				]
 			}
 
+		],
+		"instructorposts":[
+			{
+				"post_title" : "Rachel: Oh, are you setting Ross up with someone? Does she have a wedding dress?",
+				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
+				"solved" : true,
+				"read" : true,
+				"likes" : 153,
+				"comments" :[
+					"Comment1",
+					"Comment2"
+
+				]
+			},
+			{
+				"post_title" : "Chandler: WHOOOPAH!",
+				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
+				"solved" : false,
+				"read" : false,
+				"likes" : 430,
+				"comments" :[
+					"Comment3",
+					"Comment4"
+
+				]
+			}
+
 		]
 	},
 	{
 		"class":"CS 498RK",
+		"topics":[
+			"MP",
+			"Midterm",
+			"Angular Javascript",
+			"MongoDB",
+			"Prototype",
+			"Project"
+		],
 		"posts":[
 			{
 				"post_title" : "Janice: 15 Yemen Road, Yemen.",
 				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
+				"solved" : true,
+				"read" : true,
 				"likes" : 1,
 				"comments" :[
 					"Comment1",
@@ -197,7 +303,60 @@
 			{
 				"post_title" : "Joey: It’s a moo point. It’s like a cow’s opinion; it doesn’t matter. It’s moo.",
 				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
+				"solved" : true,
+				"read" : false,
 				"likes" : 53,
+				"comments" :[
+					"Comment3",
+					"Comment4"
+
+				]
+			}
+
+		],
+		"instructorposts":[
+			{
+				"post_title" : "Rachel: Oh, are you setting Ross up with someone? Does she have a wedding dress?",
+				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
+				"solved" : true,
+				"read" : false,
+				"likes" : 153,
+				"comments" :[
+					"Comment1",
+					"Comment2"
+
+				]
+			},
+			{
+				"post_title" : "Middle name is Murial",
+				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
+				"solved" : true,
+				"read" : true,
+				"likes" : 50,
+				"comments" :[
+					"Comment3",
+					"Comment4"
+
+				]
+			},
+			{
+				"post_title" : "Janice: Oh… my… God!",
+				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
+				"solved" : false,
+				"read" : true,
+				"likes" : 51,
+				"comments" :[
+					"Comment3",
+					"Comment4"
+
+				]
+			},
+			{
+				"post_title" : "Chandler: WHOOOPAH!",
+				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
+				"solved" : false,
+				"read" : false,
+				"likes" : 430,
 				"comments" :[
 					"Comment3",
 					"Comment4"

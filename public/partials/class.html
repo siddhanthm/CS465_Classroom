@@ -17,7 +17,8 @@
 				<button class="button right"><a href="#/"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign Out</a></button>
 			</div>
 		</div>
-	</div><div class="medium-9 columns details">
+	</div>
+	<div class="medium-9 columns details">
 		<div class="large-12 class_header">
 			<div class="large-1 text-center columns class_header_text"><a href="#/class/{{classindex}}">Q/A</a></div>
 			<div class="large-2 text-center columns class_header_text"><a href="#/class/{{classindex}}/officehours">Office Hours </a></div>
@@ -30,22 +31,58 @@
 			</div>
 			<div class="row class_search">
 				<div class="large-11 large-centered">
-					<div class="large-9 columns">
+					<div class="large-9 columns search_div">
 						<input ng-model ="query" placeholder="&#xF002;" style="font-family:Arial, FontAwesome" class = "searchbox" autofocus>
+						<font size = "4px">&nbsp &nbsp Sort by: </font>
+						<select class="sorting" ng-model="sort">
+							<option selected value="time"> Time </option>
+							<option value = "likes">Rating</option>
+						</select>
 					</div>
 					<div class="large-3 columns text-right"><a href="#/class/{{classindex}}/addpost"><i class="fa fa-plus" aria-hidden="true"></i></a></div>
 				</div>
 			</div>
+			<div class="row large-11 large-centered topicBar">
+				<div ng-repeat="item in classinfo.topics" class="large-2 columns topicButton"><a>{{item}}</a></div>
+			</div>
+			<h4 class="row">&nbsp &nbsp &nbsp Instructors' Posts :</h4>
 			<div class="row class_post">
-				<div ng-repeat="post in classinfo.posts| filter:query" class="large-11 large-centered class_post_item">
-					<a ng-href="#/class/{{classindex}}/{{classinfo.posts.indexOf(post)}}">
-						<div class="large-10 columns class_post_title">{{post.post_title}}</div> 
+				<div ng-repeat="post in classinfo.instructorposts| filter:query| orderBy:sort:reverse" class="large-11 large-centered class_post_item">
+					<a ng-href="#/class/{{classindex}}/{{classinfo.instructorposts.indexOf(post)}}/instructor">
+						<div class="large-9 columns class_post_title" ng-show="{{post.read}}">{{post.post_title}}</div> 
+						<b><div class="large-9 columns class_post_title" ng-hide="{{post.read}}">{{post.post_title}}</div> </b>
+						<div class="large-1 columns class_post_title text-right">
+							<font color="green"> <i class="fa fa-check" aria-hidden="true" ng-show="{{post.solved}}"></i> </font>
+							<i class="fa fa-check" aria-hidden="true" ng-hide="{{post.solved}}"></i>
+						</div>
+
 						<div class="large-2 columns class_post_title">
 							<div class="large-12 text-center">
 								<font color="red"><i class="fa fa-heart" aria-hidden="true"></i></font>
 							</div>
 							<div class="large-12 text-center">{{post.likes}}</div>
 						</div>
+					</a>
+				</div>
+			</div>
+			<h4 class="row">&nbsp &nbsp &nbsp Students' Posts :</h4>
+			<div class="row class_post">
+				<div ng-repeat="post in classinfo.posts| filter:query | orderBy:sort:reverse" class="large-11 large-centered class_post_item">
+					<a ng-href="#/class/{{classindex}}/{{classinfo.posts.indexOf(post)}}/student">
+						<div class="large-9 columns class_post_title" ng-show="{{post.read}}">{{post.post_title}}</div> 
+						<b><div class="large-9 columns class_post_title" ng-hide="{{post.read}}">{{post.post_title}}</div> </b>
+						<div class="large-1 columns class_post_title text-right">
+							<font color="green"> <i class="fa fa-check" aria-hidden="true" ng-show="{{post.solved}}"></i> </font>
+							<i class="fa fa-check" aria-hidden="true" ng-hide="{{post.solved}}"></i>
+						</div>
+
+						<div class="large-2 columns class_post_title">
+							<div class="large-12 text-center">
+								<font color="red"><i class="fa fa-heart" aria-hidden="true"></i></font>
+							</div>
+							<div class="large-12 text-center">{{post.likes}}</div>
+						</div>
+
 					</a>
 				</div>
 			</div>

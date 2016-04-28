@@ -39,8 +39,6 @@ classRoomControllers.controller('ClassCtrl', ['$scope','$http','$routeParams', f
 	$http.get('../data/class.json').success(function(data){
 		$scope.classes = data;
 		$scope.classinfo = data[$routeParams.id];
-		console.log($scope.classes);
-		console.log($scope.classinfo);
 	});
 }]);
 
@@ -83,7 +81,33 @@ classRoomControllers.controller('taohCtrl', ['$scope','$http','$routeParams', fu
 }]);
 
 
-classRoomControllers.controller('PostidCtrl', ['$scope','$http','$routeParams', function($scope, $http,$routeParams){
+classRoomControllers.controller('PostidInsCtrl', ['$scope','$http','$routeParams', function($scope, $http,$routeParams){
+	console.log("Here", $routeParams.id);
+	console.log("Here Also",$routeParams.postid);
+	$scope.classes;
+	$scope.class = $routeParams.id;
+	console.log("Yipee", $scope.class);
+	$scope.heart = true;
+	$http.get('../data/class.json').success(function(data){
+		$scope.classlist = data;
+		$scope.classes = data[$routeParams.id];
+		$scope.classinfo = $scope.classes.instructorposts[$routeParams.postid];
+		console.log($scope.classinfo);
+
+	});
+
+	$scope.change = function(){
+		$scope.heart = !$scope.heart;
+	}
+
+	$scope.submit = function(){
+		$scope.comment_added = $scope.comment;
+		$scope.if_comment = true;
+		$scope.comment = "";
+	}
+}]);
+
+classRoomControllers.controller('PostidStudentCtrl', ['$scope','$http','$routeParams', function($scope, $http,$routeParams){
 	console.log("Here", $routeParams.id);
 	console.log("Here Also",$routeParams.postid);
 	$scope.classes;
@@ -114,7 +138,8 @@ classRoomControllers.controller('AddcommentCtrl', ['$scope','$http','$routeParam
 	$http.get('../data/class.json').success(function(data){
 		$scope.classlist = data;
 		$scope.classes = data[$routeParams.id];
-		console.log($scope.classinfo);
+		$scope.topics = $scope.classes.topics;
+		console.log($scope.topics);
 	});
 
 	$scope.submit = function(){

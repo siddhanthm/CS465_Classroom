@@ -18,12 +18,6 @@
 			</div>
 		</div>
 	</div><div class="medium-9 columns details">
-		<div class="row post_back">
-			<div class="large-12 post_back_heading">
-				<a ng-href="#/class/{{class}}" class="fa fa-arrow-left" aria-hidden="true"></a>
-				to {{classes.class}}
-			</div>
-		</div>
 		<div class="row post_details">
 			<div class="large-12 text-center post_details_heading">
 					Add Post
@@ -35,22 +29,25 @@
 				<div class="large-12 text-left">
 					<form name="myform" ng-submit="submit()" nonvalidate>
 						<fieldset>
-							Summary<font color="red">*</font>
+							<font size="4px">Summary</font><font color="red">*</font> :
 							<input type="text" name="summary" 
 		        				placeholder="Summary"
 		        				ng-model="summary"
 		        				ng-required="true">
-		        			<p class="error validationerror text-center" ng-show="myform.summary.$invalid && myform.summary.$touched">
-        						Enter a summary.
-        					</p>
 
-        					Description
+        					<font size="4px">Description :</font>
         					<input type="text" name="summary" 
 		        				placeholder="Description"
 		        				ng-model="description" class="description">
 
+		        			<font size="4px">Topic : </font><br>
+		        			<select class="large-4">
+								<option ng-repeat="item in topics">{{item}}</option>
+							</select>
 						</fieldset>
-						<button type="submit" class="button">Add</button>
+						<input type="checkbox" name="anonymous" value="anonymous"> Post as anonymous.<br>
+						<input type="checkbox" name="private" value="private"> Make a private post to the instructors.
+						<a type="submit" class="button" href ="#/class/{{class}}">Add</a>
 					</form>
 				</div>
 			</div>

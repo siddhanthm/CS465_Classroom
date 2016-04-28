@@ -19,13 +19,9 @@
 		</div>
 	</div><div class="medium-9 columns details">
 		<div class="row post_back">
-			<div class="large-11 columns post_back_heading">
-				<a ng-href="#/class/{{class}}" class="fa fa-arrow-left" aria-hidden="true"></a>
-				to {{classes.class}}
-			</div>
 			<div class="large-1 columns post_back_heading text-center" ng-click="change()">
 				<i ng-show = "heart" class="fa fa-heart-o" aria-hidden="true"></i>
-				<i ng-hide = "heart" class="fa fa-heart" aria-hidden="true"></i>
+				<font color="red"><i ng-hide = "heart" class="fa fa-heart" aria-hidden="true"></i></font>
 			</div>
 		</div>
 		<div class="row post_details">
@@ -35,18 +31,28 @@
 		</div>
 		<div class="row post_description">
 			<div class="large-12 text-left post_description_box">
-				<div class="large-12 post_description_heading">Description:</div>
+				<div class="large-12 post_description_heading"><b>Description:</b> <font class = "priya_ocd" color="grey" size = "3px"> Posted {{classinfo.post_time}} by {{classinfo.post_name}}</font></div>
 				<div class="large-12 post_description_text">{{classinfo.description}}</div>
 			</div>
 			<div class="large-12 text-left post_comment_box">
-				<div class="large-12 post_comment_heading">Comments:</div>
+				<div class="large-12 post_comment_heading"><b>Comments:</b></div>
 				<div class="large-12 row post_comment_text" ng-repeat="comment in classinfo.comments">
 					<div class="large-1 text-center columns"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
-					<div class="large-11 columns">{{comment}}</div>
+					<div class="large-11 columns"><b>{{comment.mc_name}}</b> : {{comment.mc}}</div>
+					<div class="large-11 large-offset-1">
+						<div class = "row" ng-repeat="sub in comment.fc">
+							<div class="large-1 text-right columns"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+							<div class="large-11 columns"><b>{{sub.fc_name}}</b> : {{sub.fc_comment}}</div>
+						</div>
+					</div>
+					
+					<div class="large-11 large-offset-1">
+						<input type= "text" placeholder = "Reply">
+					</div>
 				</div>
 				<div class="large-12 row post_comment_text" ng-show = "if_comment">
 					<div class="large-1 text-center columns"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
-					<div class="large-11 columns">{{comment_added}}</div>
+					<div class="large-11 columns"><b>Siddhanth Maheshwari</b> : {{comment_added}}</div>
 				</div>
 			</div>
 			<div class="large-12 post_comments">

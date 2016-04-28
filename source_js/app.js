@@ -25,8 +25,11 @@ app.config(function ($routeProvider) {
 	}).when('/edit', {
 		templateUrl: './partials/editclass.html',
 		controller: 'EditCtrl'
-	}).when('/class/:id/:postid', {
+	}).when('/class/:id/:postid/instructor', {
 		templateUrl: './partials/post.html',
-		controller: 'PostidCtrl'
+		controller: 'PostidInsCtrl'
+	}).when('/class/:id/:postid/student', {
+		templateUrl: './partials/post.html',
+		controller: 'PostidStudentCtrl'
 	}).otherwise({ redirectTo: '/' });
 });
