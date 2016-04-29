@@ -39,7 +39,7 @@
 				"officeif": true,
 				"TAname": "Sanorita Dey",
 				"Location": "SC 3107",
-				"TaStartTime": "3:00",
+				"TaStartTime": "2:00",
 				"TaEndTime":"4:00",
 				"students" : 
 				[
@@ -95,7 +95,7 @@
 				"likes" : 0,
 				"comments" :[
 					{
-						"mc_name" : "Professor",
+						"mc_name" : "Instructor Kirill Mangutov",
 						"mc" : "Send me an email once you feel better and we will hold your exams then."
 					}
 				]
@@ -110,7 +110,7 @@
 				"description":"In the lecture slides, I have found multiple different definitions of 'prototype'  and a lof of details for each. Are we expected to know all of these different definitions and examples?",
 				"solved" : false,
 				"read" : true,
-				"likes" : 5430,
+				"likes" : 54,
 				"comments" :[
 
 				]
@@ -125,7 +125,7 @@
 				"description":"Do we need to submit this before our demo or any time before its stated deadline? (may 4th)",
 				"solved" : true,
 				"read" : false,
-				"likes" : 540,
+				"likes" : 40,
 				"comments" :[
 				{
 					"mc_name" : "Instructor Sanorita Dey",
@@ -222,92 +222,172 @@
 		"officeHours":[
 			{
 				"officeif": true,
-				"TAname": "Cinda",
-				"TaStartTime": "11:00",
-				"TaEndTime":"12:00",
+				"TAname": "Ashish Agrawal",
+				"Location": "SC 0207",
+				"TaStartTime": "3:30",
+				"TaEndTime":"4:30",
 				"students" : 
 				[
 					{
-						"name":"Harry",
-						"topic": "Snape is helping voldermort"
+						"name":"Priya Mittal",
+						"Location": "SC 0207"
 
 					},
 					{
-						"name":"Hermoine",
-						"topic": "I'm so smart"
+						"name":"Sheel Parekh",
+						"Location": "SC 0207"
 					},
 					{
-						"name":"Ron",
-						"topic": "I have sexual feelinggs towards my rat!"
+						"name":"Siddhanth Maheshwari",
+						"Location": "SC 0207",
+						"user": true
 					}
 				]
 
-			}	
+			},	
+			{
+				"officeif": true,
+				"TAname": "Pramod Srinivasan",
+				"Location": "SC 0207",
+				"TaStartTime": "4:00",
+				"TaEndTime":"5:00",
+				"students" : 
+				[
+					{
+						"name":"Zack",
+						"Location": "SC 0207"
+
+					},
+					{
+						"name":"Nitish",
+						"Location": "SC 0207"
+					}
+				]
+
+			}
 		],
 		"posts":[
 			{
-				"post_title" : "Joey: Sure I peed on her. And if I had to, I’d pee on any one of you!",
-				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
-				"solved" : true,
-				"read" : false,
-				"likes" : 1053,
-				"comments" :[
-					"Comment1",
-					"Comment2"
-
-				]
-			},
-			{
-				"post_title" : "Joey: Here come the meat sweats…",
-				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
+				"post_title" : "Question 2.1",
+				"post_name" : "Anonymous",
+				"post_time" : "12:30 PM",
+				"topic":"HW",
+				"description":"In the expression of question 2 part 1, the comma mean AND or OR? ",
 				"solved" : true,
 				"read" : true,
-				"likes" : 543,
+				"likes" : 52,
 				"comments" :[
-					"Comment3",
-					"Comment4"
+					{
+						"mc_name" : "Michael Kevin Adisumarta",
+						"mc" : "I'm 99% sure that it means AND"
+					},
+					{
+						"mc_name" : "Instructor Aditya Parameswaran",
+						"mc" : "AND"
+					}
 				]
 			},
 			{
-				"post_title" : "Whenever I’m sad, I stop being sad and be awesome instead. Barney",
-				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
+				"post_title" : "question 2.3",
+				"post_name" : "Anonymous",
+				"post_time" : "7:50 PM",
+				"topic":"HW",
+				"description":"I know that we are asked to use the formula for any two relations. But, for A(l,m,n) and C(x,y,z), it's a cross join, we don't even have to estimate the size, it's exactly T(A)*T(C). Do we still have to use the formula?",
+				"solved" : true,
+				"read" : true,
+				"likes" : 15,
+				"comments" :[
+					{
+						"mc_name" : "Instructor Shijiao Yuwen",
+						"mc" : "For this homework question, as in the method given in slides, we are only considering the information of the number of blocks/tuples. So you can ignore other information(what attributes are there) provided and they're there to be used by previous questions. Generally speaking, as I have seen in past homeworks, the answer would omit the case where two relations have no attribute in common and only Cartesian product can be produced. We also mentioned this a little bit in slide  13: Restrict to trees “without cartesian product”: R(A,B), S(B,C), T(C,D) ((R join T) join S) has a cartesian product. Anyway, you can get full point by following the simple procedure where only relation sizes are given."
+					}
+				]
+			},
+			{
+				"post_title" : "Memory space requirement",
+				"topic": [
+					"Query"
+				],
+				"post_name" : "Anonymous",
+				"post_time" : "7:23 PM",
+				"description":"Why exactly don't we need an output block in selection and projection? (Lower bound on M is given as 1 and not 2 in slides)",
 				"solved" : false,
-				"read" : true,
-				"likes" : 23,
+				"read" : false,
+				"likes" : 20,
 				"comments" :[
-					"Barney",
-					"Loves",
-					"You"
+
 				]
 			}
 
 		],
 		"instructorposts":[
 			{
-				"post_title" : "Rachel: Oh, are you setting Ross up with someone? Does she have a wedding dress?",
-				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
-				"solved" : true,
-				"read" : true,
-				"likes" : 153,
+				"post_title" : "HW 5 Deadline Extended to Friday 11:59 PM",
+				"post_name" : "Ashish Agrawal",
+				"post_time" : "2 Days ago",
+				"topic": [
+					"HW"
+				],
+				"description":"We have decided to extend the deadline for HW 5 to 4/29/16, Friday at 11:59 PM.",
+				"solved" : false,
+				"read" : false,
+				"likes" : 60,
 				"comments" :[
-					"Comment1",
-					"Comment2"
-
+					{
+						"mc_name" : "Anonymous",
+						"mc" : "Thank you so much"
+					}
 				]
 			},
 			{
-				"post_title" : "Chandler: WHOOOPAH!",
-				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
-				"solved" : false,
-				"read" : false,
-				"likes" : 430,
+				"post_title" : "[UPDATE] Project Report and Video Deadline is on April 22nd 11:59PM",
+				"post_name" : "Ashish Agrawal",
+				"post_time" : "10 days ago",
+				"topic": [
+					"Project"
+				],
+				"description":"We apologize for the confusion. We had posted on Piazza that the deadline was on April 20th, but we never changed it on the course webpage. To make it fair, we are postponing the deadline for the Project Report and Video to April 22nd at 11:59 PM for everyone.",
+				"solved" : true,
+				"read" : true,
+				"likes" : 50,
 				"comments" :[
-					"Comment3",
-					"Comment4"
-
+					{
+						"mc_name" : "Anonymous",
+						"mc" : "Are we required to sign up with the TA with whom we had our initial demo? Can we sign up another time slot due to time conflict?",
+						"fc" : [
+							{
+								"fc_name" : "Instructor Aditi Adhikari",
+								"fc_comment" : "Yes you are required to sign up for the same TA who took your initial demo as they are more familiar about your project."
+							}
+						]
+					},
+					{
+						"mc_name" : "Anonymous",
+						"mc" : "Our group have the same issue.",
+						"fc" : [
+							{
+								"fc_name" : "Instructor Aditya Parameswaran",
+								"fc_comment" : "Please reach out to the TA."
+							}
+						]
+					}
+				]
+			},
+			{
+				"post_title" : "Regarding Conflict Exam",
+				"post_name" : "Vipul Venkataraman",
+				"post_time" : "15 days ago",
+				"topic": [
+					"Final Exam"
+				],
+				"description":"If you fulfill the campus conflict rules (an exam at the same time, or 3 exams within 24 hours), please create a private piazza post with the required details, by 20th April",
+				"solved" : false,
+				"read" : true,
+				"likes" : 51,
+				"comments" :[
+					
 				]
 			}
-
 		]
 	},
 	{
@@ -320,83 +400,158 @@
 			"Prototype",
 			"Project"
 		],
+		"officeHours":[
+			{
+				"officeif": true,
+				"TAname": "Biplab Deka",
+				"Location": "Siebel 3116",
+				"TaStartTime": "1:00",
+				"TaEndTime":"2:00",
+				"students" : 
+				[
+					{
+						"name":"Priya Mittal",
+						"Location": "Siebel 3116"
+
+					},
+					{
+						"name":"Sheel Parekh",
+						"Location": "Siebel 3116"
+					},
+					{
+						"name":"Siddhanth Maheshwari",
+						"Location": "Siebel 3116",
+						"user": true
+					}
+				]
+
+			},	
+			{
+				"officeif": true,
+				"TAname": "Sujay Khandekar",
+				"Location": "Siebel 0207",
+				"TaStartTime": "1:30",
+				"TaEndTime":"3:00",
+				"students" : 
+				[
+					{
+						"name":"Zack",
+						"Location": "Siebel 0207"
+
+					},
+					{
+						"name":"Nitish",
+						"Location": "Siebel 0207"
+					}
+				]
+
+			}
+		],
 		"posts":[
 			{
-				"post_title" : "Janice: 15 Yemen Road, Yemen.",
-				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
+				"post_title" : "How to run project with server.js with two separate repos",
+				"post_name" : "Anonymous",
+				"post_time" : "3 days ago",
+				"topic":"Project",
+				"description":"So I am trying to figure out how to have my webpage render by only running the server. I was following the passport tutorial and it used 'app.use(express.static(__dirname+ '/public'));' to run the front-end without running grunt in a separate terminal. Any tips on getting it to work? Would I still need to run grunt in my server repo?",
 				"solved" : true,
 				"read" : true,
-				"likes" : 1,
+				"likes" : 40,
 				"comments" :[
-					"Comment1",
-					"Comment2"
-
+					{
+						"mc_name" : "Instructor Devin Ho",
+						"mc" : "Can you not get the demo to work? You should be able to follow that as a template. To run it run nodemon server.js."
+					}
 				]
 			},
 			{
-				"post_title" : "Joey: It’s a moo point. It’s like a cow’s opinion; it doesn’t matter. It’s moo.",
-				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
+				"post_title" : "Abide and Angular",
+				"topic": [
+					"Angular Javascript", "Prototype"
+				],
+				"post_name" : "Anonymous",
+				"post_time" : "5 days ago",
+				"description":"I know this is down to the wire but for reasons I cannot figure out I cannot get Abide to work with my Angular partials. I was hoping someone had a quick fix for this.",
+				"solved" : false,
+				"read" : false,
+				"likes" : 43,
+				"comments" :[
+					{
+						"mc_name" : "Instructor Annie Rong",
+						"mc" : "Without looking at your code, I don't know what's going wrong. The example docs you have linked are really helpful. Essentially you need to define a form as data-abide in HTML and you can specify certain input values as required and define patterns for them if necessary."
+					},
+					{
+						"mc_name" : "Alek Festekijan",
+						"mc" : "What doesn't work?",
+						"fc" : [
+							{
+								"fc_name" : "Anonymous",
+								"fc_comment" : "Essentially this: http://foundation.zurb.com/forum/posts/1158-abide-behaves-completely-different-with-angularjs-and-views, when using the form directly off of: http://foundation.zurb.com/sites/docs/v/5.5.3/components/abide.html"
+							}
+						]
+					}
+				]
+			},
+			{
+				"post_title" : "MongoDB",
+				"post_name" : "Priya Mittal",
+				"post_time" : "1 month ago",
+				"topic": [
+					"Midterm", "MongoDB"
+				],
+				"description":"Will MongoDB be there on the midterm?",
 				"solved" : true,
 				"read" : false,
-				"likes" : 53,
+				"likes" : 540,
 				"comments" :[
-					"Comment3",
-					"Comment4"
-
+					{
+						"mc_name" : "Instructor Devin Ho",
+						"mc" : "You should know the basics for it."
+					}
 				]
 			}
 
 		],
 		"instructorposts":[
 			{
-				"post_title" : "Rachel: Oh, are you setting Ross up with someone? Does she have a wedding dress?",
-				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
+				"post_title" : "MP4 Grading Room Change!",
+				"post_name" : "Annie Rong",
+				"post_time" : "3 days ago",
+				"topic": [
+					"MP"
+				],
+				"description":"Sorry for the belated notice, we will be hosting MP4 grading in SC 3102! ",
 				"solved" : true,
 				"read" : false,
-				"likes" : 153,
+				"likes" : 13,
 				"comments" :[
-					"Comment1",
-					"Comment2"
-
+					{
+						"mc_name" : "Yining Wang",
+						"mc" : "for today as well?",
+						"fc" : [
+							{
+								"fc_name" : "Instructor Annie Rong",
+								"fc_comment" : "Today will be in 3124."
+							}
+						]
+					}
 				]
 			},
 			{
-				"post_title" : "Middle name is Murial",
-				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
+				"post_title" : "Final Project Part B",
+				"post_name" : "Sujay Khandekar",
+				"post_time" : "29 days ago",
+				"topic": [
+					"Project"
+				],
+				"description":"Part B of the final project is up on the website.",
 				"solved" : true,
-				"read" : true,
-				"likes" : 50,
-				"comments" :[
-					"Comment3",
-					"Comment4"
-
-				]
-			},
-			{
-				"post_title" : "Janice: Oh… my… God!",
-				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
-				"solved" : false,
-				"read" : true,
-				"likes" : 51,
-				"comments" :[
-					"Comment3",
-					"Comment4"
-
-				]
-			},
-			{
-				"post_title" : "Chandler: WHOOOPAH!",
-				"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis vehicula augue. Donec consectetur, purus at auctor pellentesque, velit augue tempus lorem, eget vehicula massa tellus eu lectus. Fusce consectetur in lectus id mattis. Sed in sodales nisi. Nunc sodales ornare tincidunt. Nullam ultricies ante nec urna suscipit, ac molestie mauris viverra. Pellentesque dictum elit vitae neque ultrices imperdiet. Aliquam sollicitudin aliquam erat. Ut maximus, dui in feugiat cursus, nibh leo elementum neque, non vulputate lectus eros non quam.",
-				"solved" : false,
 				"read" : false,
-				"likes" : 430,
+				"likes" : 1,
 				"comments" :[
-					"Comment3",
-					"Comment4"
 
 				]
 			}
-
 		]
 	}
 ]
