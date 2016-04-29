@@ -31,5 +31,8 @@ app.config(function ($routeProvider) {
 	}).when('/class/:id/:postid/student', {
 		templateUrl: './partials/post.html',
 		controller: 'PostidStudentCtrl'
-	}).otherwise({ redirectTo: '/' });
+	}).when('/TAclass/:id', {
+		templateUrl: './partials/TAClass.html',
+		controller: 'ClassCtrl'
+	}). otherwise({ redirectTo: '/' });
 });

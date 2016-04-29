@@ -3,11 +3,11 @@
 		"class":"CS 465",
 		"topics":[
 			"HW",
-			"Project Proposal",
+			"Project",
 			"User Scenarios",
 			"User Evaluation",
 			"Prototype",
-			"Final Exam"
+			"Exam"
 		],
 		"officeHours":[
 			{
@@ -61,6 +61,7 @@
 				"post_title" : "Poster Guidelines",
 				"post_name" : "Anonymous",
 				"post_time" : "1 day ago",
+				"topic":"Project",
 				"description":"Are there any guidelines for what should be on this poster? ",
 				"solved" : true,
 				"read" : true,
@@ -83,7 +84,27 @@
 				]
 			},
 			{
+				"post_title" : "Need to give conflict",
+				"post_name" : "Anonymous",
+				"private" : true,
+				"post_time" : "1 day ago",
+				"topic":"Project",
+				"description":"I am unwell. Is there anyway I can give the conflict exam? ",
+				"solved" : true,
+				"read" : true,
+				"likes" : 0,
+				"comments" :[
+					{
+						"mc_name" : "Professor",
+						"mc" : "Send me an email once you feel better and we will hold your exams then."
+					}
+				]
+			},
+			{
 				"post_title" : "definition of prototype",
+				"topic": [
+					"Project", "Prototype"
+				],
 				"post_name" : "Yujin Oh",
 				"post_time" : "1 day ago",
 				"description":"In the lecture slides, I have found multiple different definitions of 'prototype'  and a lof of details for each. Are we expected to know all of these different definitions and examples?",
@@ -98,6 +119,9 @@
 				"post_title" : "Final prototype demo(dummy) submission?",
 				"post_name" : "Anonymous",
 				"post_time" : "3 days ago",
+				"topic": [
+					"Project", "Prototype"
+				],
 				"description":"Do we need to submit this before our demo or any time before its stated deadline? (may 4th)",
 				"solved" : true,
 				"read" : false,
@@ -126,6 +150,9 @@
 				"post_title" : "Midterm score posted in Compass",
 				"post_name" : "Sanorita Dey",
 				"post_time" : "1 month ago",
+				"topic": [
+					"Exam"
+				],
 				"description":"We just posted the midterm scores in Compass2g. Here are the few important statistics about the exam: MEAN SCORE : 81.22, MEDIAN SCORE : 83.63, STANDARD DEVIATION : 8.21, OBTAINED LOW SCORE : 58, OBTAINED HIGH SCORE : 96",
 				"solved" : true,
 				"read" : false,
@@ -151,6 +178,9 @@
 				"post_title" : "Individual Peer Evaluation #1",
 				"post_name" : "Sanorita Dey",
 				"post_time" : "2 months ago",
+				"topic": [
+					"User Evaluation", "Project"
+				],
 				"description":"This is just to inform you all that your first peer evaluation (an evaluation of the workload managed by each member of the group) is due on 1st March at 3:30 pm. This is an individual assignment. That is why, please submit your evaluation individually through compass peer evaluation #1 submission link. If you have already submitted this as a group, please submit it again individually.",
 				"solved" : true,
 				"read" : true,
@@ -163,6 +193,9 @@
 				"post_title" : "Deadline extended for written project proposal and peer evaluation",
 				"post_name" : "Sanorita Dey",
 				"post_time" : "2 months ago",
+				"topic": [
+					"User Evaluation", "Project"
+				],
 				"description":"We have extended the deadline for written project proposal and peer evaluation. The new deadline is March 1, 2016 at 3:30 pm. We hope this extension will be useful for all the groups.",
 				"solved" : false,
 				"read" : true,

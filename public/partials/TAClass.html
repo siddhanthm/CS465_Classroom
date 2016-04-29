@@ -67,10 +67,10 @@
 			</div>
 			<h4 class="row">&nbsp &nbsp &nbsp Students' Posts :</h4>
 			<div class="row class_post">
-				<div ng-repeat="post in classinfo.posts| filter:query | orderBy:sort:reverse" class="large-11 large-centered class_post_item" ng-hide="{{post.private}}">
+				<div ng-repeat="post in classinfo.posts| filter:query | orderBy:sort:reverse" class="large-11 large-centered class_post_item">
 					<a ng-href="#/class/{{classindex}}/{{classinfo.posts.indexOf(post)}}/student">
-						<div class="large-9 columns class_post_title" ng-show="{{post.read}}">{{post.post_title}}</div> 
-						<b><div class="large-9 columns class_post_title" ng-hide="{{post.read}}">{{post.post_title}}</div> </b>
+						<div class="large-9 columns class_post_title" ng-show="{{post.read}}"><font color = "red" ng-show="{{post.private}}">Private: </font>{{post.post_title}} </div> 
+						<b><div class="large-9 columns class_post_title" ng-hide="{{post.read}}"><font color = "red" ng-show="{{post.private}}">Private: </font>{{post.post_title}}</div> </b>
 						<div class="large-1 columns class_post_title text-right">
 							<font color="green"> <i class="fa fa-check" aria-hidden="true" ng-show="{{post.solved}}"></i> </font>
 							<i class="fa fa-check" aria-hidden="true" ng-hide="{{post.solved}}"></i>

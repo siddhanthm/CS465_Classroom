@@ -36,10 +36,16 @@ classRoomControllers.controller('ClassCtrl', ['$scope','$http','$routeParams', f
 	$scope.order = "likes";
 	$scope.reverse= true;
 	$scope.classindex = $routeParams.id;
+
+	$scope.sort = "time";
 	$http.get('../data/class.json').success(function(data){
 		$scope.classes = data;
 		$scope.classinfo = data[$routeParams.id];
 	});
+	$scope.filter = function(x){
+		console.log(x);
+		$scope.query = x;
+	}
 }]);
 
 classRoomControllers.controller('ohCtrl', ['$scope','$http','$routeParams', function($scope, $http,$routeParams){
