@@ -1,0 +1,54 @@
+<div class="AddPostPage">
+	<div class="medium-3 columns title">
+		<div class="row heading">
+			<div class="heading_text">
+				<i class="fa fa-book"></i> ClassRoom
+			</div>
+		</div>
+		<div class="row classes_left">
+			<div class="text-center large-12 classes_left_heading">Classes</div>
+			<div ng-repeat="class in classlist" class="large-6 large-centered text-center class_list">
+				<div class="class_list_title"><a href="#/class/{{classlist.indexOf(class)}}">{{class.class}}</a></div> 
+			</div>
+		</div>
+		<div class="row footer"> 
+			<div class="footer_buttons">
+				<button class="button"><a href="#/edit"><i class="fa fa-cog" aria-hidden="true"></i> Classes</a></button>
+				<button class="button right"><a href="#/"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign Out</a></button>
+			</div>
+		</div>
+	</div><div class="medium-9 columns details">
+		<div class="row post_details">
+			<div class="large-12 text-center post_details_heading">
+					Add Post
+			</div>
+		</div>
+		<div class="row post_description">
+			<div class="large-12 text-center"><font color="green">{{message}}</font></div>
+			<div class="large-12 post_comments">
+				<div class="large-12 text-left">
+					<form name="myform" ng-submit="submit()" nonvalidate>
+						<fieldset>
+							<font size="4px">Summary</font><font color="red">*</font> :
+							<input type="text" name="summary" 
+		        				placeholder="Summary"
+		        				ng-model="summary"
+		        				ng-required="true">
+
+        					<font size="4px">Description :</font>
+        					<input type="text" name="summary" 
+		        				placeholder="Description"
+		        				ng-model="description" class="description">
+
+		        			<font size="4px">Topic : </font><br>
+		        			<select class="large-4">
+								<option ng-repeat="item in topics">{{item}}</option>
+							</select>
+						</fieldset>
+						<a type="submit" class="button" href ="#/class/{{class}}">Add</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

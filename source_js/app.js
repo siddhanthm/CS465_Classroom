@@ -34,5 +34,8 @@ app.config(function ($routeProvider) {
 	}).when('/TAclass/:id', {
 		templateUrl: './partials/TAClass.html',
 		controller: 'ClassCtrl'
+	}).when('/TAclass/:id/addpost', {
+		templateUrl: './partials/TAaddcomment.html',
+		controller: 'AddcommentCtrl'
 	}). otherwise({ redirectTo: '/' });
 });
