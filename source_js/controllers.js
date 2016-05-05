@@ -46,6 +46,8 @@ classRoomControllers.controller('ClassCtrl', ['$scope','$http','$routeParams', f
 		console.log(x);
 		$scope.query = x;
 	}
+	$scope.h = new Array();
+	$scope.h[$routeParams.id] = true;
 }]);
 
 classRoomControllers.controller('ohCtrl', ['$scope','$http','$routeParams', function($scope, $http,$routeParams){
@@ -61,6 +63,8 @@ classRoomControllers.controller('ohCtrl', ['$scope','$http','$routeParams', func
 		console.log($scope.classinfo);
 		console.log($scope.classinfo.officeHours[0].students[0].name);
 	});
+	$scope.h = new Array();
+	$scope.h[$routeParams.id] = true;
 }]);
 
 classRoomControllers.controller('taohCtrl', ['$scope','$http','$routeParams', function($scope, $http,$routeParams){
@@ -84,6 +88,8 @@ classRoomControllers.controller('taohCtrl', ['$scope','$http','$routeParams', fu
 		$scope.addedEndTime = $scope.etime;
 		$scope.if_added = true;
 	}
+	$scope.h = new Array();
+	$scope.h[$routeParams.id] = true;
 }]);
 
 
@@ -111,6 +117,8 @@ classRoomControllers.controller('PostidInsCtrl', ['$scope','$http','$routeParams
 		$scope.if_comment = true;
 		$scope.comment = "";
 	}
+	$scope.h = new Array();
+	$scope.h[$routeParams.id] = true;
 }]);
 
 classRoomControllers.controller('PostidStudentCtrl', ['$scope','$http','$routeParams', function($scope, $http,$routeParams){
@@ -137,6 +145,8 @@ classRoomControllers.controller('PostidStudentCtrl', ['$scope','$http','$routePa
 		$scope.if_comment = true;
 		$scope.comment = "";
 	}
+	$scope.h = new Array();
+	$scope.h[$routeParams.id] = true;
 }]);
 
 classRoomControllers.controller('AddcommentCtrl', ['$scope','$http','$routeParams', function($scope, $http,$routeParams){
@@ -151,6 +161,8 @@ classRoomControllers.controller('AddcommentCtrl', ['$scope','$http','$routeParam
 	$scope.submit = function(){
 		$scope.message = "Post added Successfully!";
 	}
+	$scope.h = new Array();
+	$scope.h[$routeParams.id] = true;
 }]);
 
 classRoomControllers.controller('EditCtrl', ['$scope','$http','$routeParams', function($scope, $http,$routeParams){
@@ -168,6 +180,9 @@ classRoomControllers.controller('EditCtrl', ['$scope','$http','$routeParams', fu
 		$scope.message1 = "";
 		$scope.message = "Class added!";
 	}
+
+	$scope.h = new Array();
+	$scope.h[$routeParams.id] = true;
 
 }]);
 

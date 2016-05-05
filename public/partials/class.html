@@ -8,7 +8,7 @@
 		<div class="row classes_left">
 			<div class="text-center large-12 classes_left_heading">Classes</div>
 			<div ng-repeat="class in classes" class="large-6 large-centered text-center class_list">
-				<div class="class_list_title"><a href="#/class/{{classes.indexOf(class)}}">{{class.class}}</a></div> 
+			<div class="class_list_title"><a href="#/class/{{classes.indexOf(class)}}"><font color="#2199e8" ng-show = "{{h[classes.indexOf(class)]}}">{{class.class}}</font><font ng-hide = "{{h[classes.indexOf(class)]}}">{{class.class}}</font></a></div> 
 			</div>
 		</div>
 		<div class="row footer"> 
@@ -39,7 +39,7 @@
 							<option value = "likes">Rating</option>
 						</select>
 					</div>
-					<div class="large-3 columns text-right"><a href="#/class/{{classindex}}/addpost"><i class="fa fa-plus" aria-hidden="true"></i></a></div>
+					<div class="large-3 columns text-right"><a href="#/class/{{classindex}}/addpost"><font size = "4px">Add Post <i class="fa fa-plus" aria-hidden="true"></i> </font> </a></div>
 				</div>
 			</div>
 			<div class="row large-11 large-centered topicBar">

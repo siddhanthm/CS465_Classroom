@@ -8,7 +8,7 @@
 		<div class="row classes_left">
 			<div class="text-center large-12 classes_left_heading">Classes</div>
 			<div ng-repeat="class in classlist" class="large-6 large-centered text-center class_list">
-				<div class="class_list_title"><a href="#/class/{{classlist.indexOf(class)}}">{{class.class}}</a></div> 
+			<div class="class_list_title"><a href="#/class/{{classlist.indexOf(class)}}"><font color="#2199e8" ng-show = "{{h[classlist.indexOf(class)]}}">{{class.class}}</font><font ng-hide = "{{h[classlist.indexOf(class)]}}">{{class.class}}</font></a></div> 
 			</div>
 		</div>
 		<div class="row footer"> 
